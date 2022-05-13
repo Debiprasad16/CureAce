@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">CureAce</string>
+    <string name="password">Password</string>
+    <string name="login">Login</string>
+    <string name="api_key">rzp_test_MzR5uF0ETBFUGL</string>
+    <string name="secret_key">VTAMztbD2eF4VvRGrDwSBNvu</string>
+</resources>

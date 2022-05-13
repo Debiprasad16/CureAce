@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "941007369181",
+    "project_id": "cureace-ef65e",
+    "storage_bucket": "cureace-ef65e.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:941007369181:android:5d6283a36a32bc30363c34",
+        "android_client_info": {
+          "package_name": "com.app.cureace"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "941007369181-3ha6jiusbs45sc5hc5mu3pno2fnp6ejm.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAsovYA5i2-Y6d7k1RCZ_kOT3YA5yazMls"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "941007369181-3ha6jiusbs45sc5hc5mu3pno2fnp6ejm.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,184 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.bedbooking.BedDetailsActivity">
+
+    <androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:app="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/relativeLayout"
+        android:layout_width="match_parent"
+        android:orientation="vertical"
+        android:layout_height="wrap_content"
+        android:elevation="@dimen/_10dp"
+        app:cardBackgroundColor="@color/app_color"
+
+        app:cardUseCompatPadding="true">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:id="@+id/name_tv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:text="Name"
+                android:textStyle="bold"
+                android:textColor="@color/white"
+                android:layout_margin="@dimen/_10dp"
+                android:textSize="@dimen/_20sp"/>
+
+
+
+            <TextView
+                android:id="@+id/h_name_tv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:text="Hospital Name"
+                android:textStyle="bold"
+
+                android:textColor="@color/white"
+                android:layout_marginLeft="@dimen/_10dp"
+                android:layout_marginRight="@dimen/_10dp"
+                android:layout_marginBottom="@dimen/_10dp"
+                android:textSize="14sp"/>
+
+            <TextView
+                android:id="@+id/email_tv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:text="Email"
+
+                android:textColor="@color/white"
+                android:layout_marginLeft="@dimen/_10dp"
+                android:layout_marginRight="@dimen/_10dp"
+                android:layout_marginBottom="@dimen/_10dp"
+                android:textSize="14sp"/>
+
+            <TextView
+                android:id="@+id/mobile_tv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:text="Mobile"
+
+                android:textColor="@color/white"
+                android:layout_marginLeft="@dimen/_10dp"
+                android:layout_marginRight="@dimen/_10dp"
+                android:textSize="14sp"/>
+
+            <TextView
+                android:id="@+id/working_days_tv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:text="Working Days"
+                android:textStyle="bold"
+
+                android:textColor="@color/white"
+                android:layout_marginTop="@dimen/_10dp"
+                android:layout_marginLeft="@dimen/_10dp"
+                android:layout_marginRight="@dimen/_10dp"
+                android:layout_marginBottom="@dimen/_20dp"
+
+                android:textSize="16sp"/>
+
+
+
+
+
+
+
+        </LinearLayout>
+    </androidx.cardview.widget.CardView>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:background="@color/app_color"
+        android:layout_below="@+id/relativeLayout"
+        android:layout_margin="@dimen/_10dp"
+        >
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:weightSum="2"
+            android:layout_margin="@dimen/_10dp"
+            android:orientation="horizontal">
+            <androidx.appcompat.widget.AppCompatButton
+                android:layout_width="@dimen/_20dp"
+                android:layout_height="wrap_content"
+                android:text="Select Start Date"
+                android:layout_weight="2"
+                android:id="@+id/start_date_btn"
+                />
+
+        </LinearLayout>
+
+        <TextView
+            android:id="@+id/date_tv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/_16sp"
+            android:layout_gravity="center"
+            android:textColor="@color/white"
+            android:textAlignment="center"
+            android:text="Select start date from booking and write no. of days"/>
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="@dimen/_10dp"
+            android:background="@drawable/textfield_bg"
+            android:orientation="vertical"
+            android:layout_gravity="center"
+            android:layout_marginLeft="@dimen/_10dp"
+            android:layout_marginTop="@dimen/_10dp"
+
+
+            >
+
+            <EditText
+                android:id="@+id/days_et"
+                android:layout_width="match_parent"
+                android:layout_height="50dp"
+                android:backgroundTint="@android:color/transparent"
+                android:hint="enter no. of days "
+                android:inputType="textMultiLine"
+                android:padding="@dimen/_10dp"
+
+                android:textColor="@color/greencolor"
+                android:textColorHint="#BFBFBF" />
+
+        </RelativeLayout>
+
+
+    </LinearLayout>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/book_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_gravity="center"
+        android:layout_marginTop="40dp"
+        android:background="@drawable/solid_bg_app_color_round_corner"
+        android:text="Book"
+        android:textColor="@color/white" />
+    <ProgressBar
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:visibility="gone"
+        android:id="@+id/progressBar"/>
+</RelativeLayout>
