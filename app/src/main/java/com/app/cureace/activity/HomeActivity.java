@@ -38,10 +38,11 @@ public class HomeActivity extends AppCompatActivity {
 
     public DrawerLayout drawer;
     protected FrameLayout mDrawerLayout, actionBar;
-     private NavigationView navigationView;
+    private NavigationView navigationView;
     private RelativeLayout drawerHead;
     private TextView nameTV;
-
+    private TextView onlineMedicine;
+    private TextView onlineAmbulance;
 
     FirebaseUser firebaseUser;
     FirebaseAuth mAuth;
@@ -64,6 +65,8 @@ RelativeLayout c_doc_btn,bed_btn;
         navigationView = findViewById(R.id.nav_view);
         c_doc_btn = findViewById(R.id.c_doc_btn);
         bed_btn = findViewById(R.id.bed_btn);
+        onlineMedicine = findViewById(R.id.online_medicine_store_btn);
+        onlineAmbulance = findViewById(R.id.online_ambulance_service);
 
 
         sharedPref = getSharedPreferences(AppUtil.PREFS, 0);
@@ -90,6 +93,18 @@ RelativeLayout c_doc_btn,bed_btn;
             public void onClick(View view) {
 
                AppUtil.startActivity(HomeActivity.this, BedListActivity.class);
+            }
+        });
+        onlineMedicine.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Toast.makeText(HomeActivity.this, "Under Development", Toast.LENGTH_SHORT).show();
+            }
+        });
+        onlineAmbulance.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Toast.makeText(HomeActivity.this, "Under Development", Toast.LENGTH_SHORT).show();
             }
         });
     }
