@@ -14,6 +14,7 @@
         android:layout_above="@+id/imageView"
         android:layout_marginBottom="40dp"
         android:text="CureAce"
+
         android:textAlignment="center"
         android:textColor="@color/white"
         android:textSize="60sp" />

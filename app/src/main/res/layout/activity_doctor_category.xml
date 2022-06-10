@@ -1,0 +1,137 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".activity.doctor.DoctorCategoryActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="3"
+        android:layout_marginTop="@dimen/_10dp"
+        android:layout_marginLeft="@dimen/_10dp"
+        android:layout_marginRight="@dimen/_10dp"
+        >
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:layout_width="@dimen/_20dp"
+            android:layout_height="80dp"
+            android:layout_weight="1"
+            android:text="Dentists"
+            android:textSize="10sp"
+            android:onClick="openDentist"
+            android:background="@drawable/solid_bg_app_color_round_corner"
+            android:textColor="@color/white"/> '
+        <androidx.appcompat.widget.AppCompatButton
+            android:layout_width="@dimen/_20dp"
+            android:layout_height="80dp"
+            android:layout_weight="1"
+            android:text="Cardiologist"
+            android:textSize="10sp"
+            android:onClick="openCardio"
+            android:layout_marginLeft="@dimen/_10dp"
+            android:background="@drawable/solid_bg_app_color_round_corner"
+            android:textColor="@color/white"/>
+        <androidx.appcompat.widget.AppCompatButton
+            android:layout_width="@dimen/_20dp"
+            android:layout_height="80dp"
+            android:layout_weight="1"
+            android:text="Gynaecologist"
+            android:textSize="10sp"
+            android:onClick="openGyna"
+            android:layout_marginLeft="@dimen/_10dp"
+            android:background="@drawable/solid_bg_app_color_round_corner"
+            android:textColor="@color/white"/>
+
+    </LinearLayout>
+
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="3"
+        android:layout_marginTop="@dimen/_10dp"
+        android:layout_marginLeft="@dimen/_10dp"
+        android:layout_marginRight="@dimen/_10dp"
+        >
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:layout_width="@dimen/_20dp"
+            android:layout_height="80dp"
+            android:layout_weight="1"
+            android:text="Psychiatrists"
+            android:textSize="10sp"
+            android:onClick="openPsy"
+            android:background="@drawable/solid_bg_app_color_round_corner"
+            android:textColor="@color/white"/> '
+        <androidx.appcompat.widget.AppCompatButton
+            android:layout_width="@dimen/_20dp"
+            android:layout_height="80dp"
+            android:layout_weight="1"
+            android:text="Radiologist"
+            android:textSize="10sp"
+            android:onClick="openRadio"
+            android:layout_marginLeft="@dimen/_10dp"
+            android:background="@drawable/solid_bg_app_color_round_corner"
+            android:textColor="@color/white"/>
+        <androidx.appcompat.widget.AppCompatButton
+            android:layout_width="@dimen/_20dp"
+            android:layout_height="80dp"
+            android:layout_weight="1"
+            android:text="Neurologist"
+            android:onClick="openNeu"
+            android:textSize="10sp"
+            android:layout_marginLeft="@dimen/_10dp"
+            android:background="@drawable/solid_bg_app_color_round_corner"
+            android:textColor="@color/white"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:weightSum="3"
+        android:layout_marginTop="@dimen/_10dp"
+        android:layout_marginLeft="@dimen/_10dp"
+        android:layout_marginRight="@dimen/_10dp"
+        >
+
+        <androidx.appcompat.widget.AppCompatButton
+            android:layout_width="@dimen/_20dp"
+            android:layout_height="80dp"
+            android:layout_weight="1"
+            android:text="Dermatologists"
+            android:onClick="openDer"
+            android:textSize="10sp"
+            android:background="@drawable/solid_bg_app_color_round_corner"
+            android:textColor="@color/white"/> '
+        <androidx.appcompat.widget.AppCompatButton
+            android:layout_width="@dimen/_20dp"
+            android:layout_height="80dp"
+            android:layout_weight="1"
+            android:text="Nephrologists"
+            android:onClick="openNeph"
+            android:textSize="10sp"
+            android:layout_marginLeft="@dimen/_10dp"
+            android:background="@drawable/solid_bg_app_color_round_corner"
+            android:textColor="@color/white"/>
+        <androidx.appcompat.widget.AppCompatButton
+            android:layout_width="@dimen/_20dp"
+            android:layout_height="80dp"
+            android:layout_weight="1"
+            android:text="Endocrinologists"
+            android:textSize="10sp"
+            android:onClick="openEndo"
+            android:layout_marginLeft="@dimen/_10dp"
+            android:background="@drawable/solid_bg_app_color_round_corner"
+            android:textColor="@color/white"/>
+
+    </LinearLayout>
+
+</LinearLayout>

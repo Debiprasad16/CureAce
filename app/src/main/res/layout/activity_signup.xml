@@ -161,6 +161,51 @@
                     android:textColorHint="#BFBFBF" />
 
             </RelativeLayout>
+        </LinearLayout>  <!--password-->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+
+            android:layout_marginTop="@dimen/_20dp"
+            >
+
+            <TextView
+                android:id="@+id/confirmpassword_tv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="0.6"
+                android:textSize="@dimen/_16sp"
+                android:layout_gravity="center"
+                android:textColor="@color/white"
+
+                android:text="Confirm Password"/>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="@dimen/_10dp"
+                android:background="@drawable/textfield_bg"
+                android:orientation="vertical"
+                android:layout_gravity="center"
+                android:layout_weight="1.6"
+                android:layout_marginTop="@dimen/_10dp"
+                android:layout_marginLeft="@dimen/_10dp"
+
+                >
+
+                <EditText
+                    android:id="@+id/confirmpassword_et"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:backgroundTint="@android:color/transparent"
+                    android:hint="confirm your password"
+                    android:inputType="textPassword"
+                    android:padding="@dimen/_10dp"
+
+                    android:textColor="@color/greencolor"
+                    android:textColorHint="#BFBFBF" />
+
+            </RelativeLayout>
         </LinearLayout>
 
         <!--mobile no-->

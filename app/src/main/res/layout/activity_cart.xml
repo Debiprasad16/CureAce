@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".activity.medicines.CartActivity">
+    <ProgressBar
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:visibility="gone"
+        android:id="@+id/progressBar"/>
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scrollbars="vertical"
+        android:layout_above="@+id/total_tv"
+        android:layout_margin="@dimen/_20dp"
+        android:id="@+id/recyclerView"/>
+
+    <TextView
+        android:id="@+id/total_tv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/book_btn"
+         android:layout_marginTop="20dp"
+        android:textAlignment="center"
+        android:text="Total:0"
+        android:textColor="@color/black"
+        android:textSize="@dimen/_18sp" />
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/book_btn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_gravity="center"
+        android:layout_marginTop="20dp"
+        android:background="@drawable/solid_bg_app_color_round_corner"
+        android:onClick="checkoutAllCart"
+        android:text="Checkout"
+        android:textColor="@color/white" />
+
+</RelativeLayout>

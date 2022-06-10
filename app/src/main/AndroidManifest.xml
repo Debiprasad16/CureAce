@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools">
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.app.cureace">
 
     <uses-permission android:name="android.permission.INTERNET" />
 
@@ -12,11 +13,42 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.CureAce">
         <activity
+            android:name=".activity.medicines.OrderDetailsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.medicines.MyOrdersActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.medicines.CartActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.medicines.MedicinesDetailsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.medicines.MedicineListActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.doctor.DoctorCategoryActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.ambulance.MyAmbulanceBookingDetailsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.ambulance.MyAmbulanceBookingActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.ambulance.AmbulanceDetailsActivity"
+            android:exported="false" />
+        <activity
+            android:name=".activity.ambulance.AmbulancesActivity"
+            android:exported="false" />
+        <activity
             android:name=".activity.bedbooking.MyBedBookingDetailsActivity"
             android:exported="false" />
         <activity
             android:name=".activity.bedbooking.MyBedBookingActivity"
             android:exported="false" />
+
         <meta-data
             android:name="com.razorpay.ApiKey"
             android:value="@string/api_key" />

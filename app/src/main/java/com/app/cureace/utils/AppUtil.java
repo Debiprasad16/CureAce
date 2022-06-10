@@ -14,6 +14,11 @@ public class AppUtil {
     public static final String USERS_TABLE_KEY ="users" ;
     public static final String DOCTORS_TABLE_KEY ="doctors" ;
     public static final String BEDS_TABLE_KEY ="beds" ;
+    public static final String AMBULANCES_TABLE_KEY ="ambulances" ;
+    public static final String MEDICINES_TABLE_KEY ="medicines" ;
+    public static final String MEDICINES_BOOKING_TABLE_KEY ="medicines_booking" ;
+    public static final String MEDICINES_CART_TABLE_KEY ="medicines_cart" ;
+    public static final String AMBULANCE_BOOKING_TABLE_KEY ="ambulance_booking" ;
     public static final String APPOINTMENTS_TABLE_KEY ="appointments" ; //where store data of user consultants
     public static final String BED_BOOKING_TABLE_KEY ="bed_booking" ; //where store data of user bed booking
     public static final String PREFS = "prefs";

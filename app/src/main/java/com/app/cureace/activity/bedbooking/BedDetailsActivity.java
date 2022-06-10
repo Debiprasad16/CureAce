@@ -235,4 +235,6 @@ public class BedDetailsActivity extends AppCompatActivity implements DatePickerD
     public void onPaymentError(int i, String s) {
          Toast.makeText(this, "Payment Failed due to error : " + s, Toast.LENGTH_SHORT).show();
     }
+
+
 }

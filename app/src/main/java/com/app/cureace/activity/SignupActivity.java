@@ -26,7 +26,7 @@ import com.google.firebase.database.FirebaseDatabase;
 
 public class SignupActivity extends AppCompatActivity {
     private static final String TAG ="tag" ;
-     EditText name_et,email_et,password_et,mobile_et,address_et,idproof_et;
+     EditText name_et,email_et,password_et,confirmpassword_et,mobile_et,address_et,idproof_et;
 
 
     ProgressBar signUp_progress;
@@ -46,6 +46,7 @@ public class SignupActivity extends AppCompatActivity {
         name_et=findViewById(R.id.name_et);
         email_et=findViewById(R.id.email_et);
         password_et=findViewById(R.id.password_et);
+        confirmpassword_et=findViewById(R.id.confirmpassword_et);
         mobile_et=findViewById(R.id.mobile_et);
         idproof_et=findViewById(R.id.idproof_et);
         address_et=findViewById(R.id.address_et);
@@ -56,10 +57,12 @@ public class SignupActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
 
-
-
-                signupFirebase(name_et.getText().toString(),email_et.getText().toString(),password_et.getText().toString(),mobile_et.getText().toString(),address_et.getText().toString(),idproof_et.getText().toString());
-
+                if (!confirmpassword_et.getText().toString().equals(password_et.getText().toString()))
+                {
+                    confirmpassword_et.setError("confirm password not matched!");
+                }else {
+                    signupFirebase(name_et.getText().toString(), email_et.getText().toString(), password_et.getText().toString(), mobile_et.getText().toString(), address_et.getText().toString(), idproof_et.getText().toString());
+                }
             }
         });
     }

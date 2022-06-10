@@ -34,6 +34,7 @@ public class DoctorListActivity extends AppCompatActivity {
 
     RecyclerView recyclerView;
     ProgressBar progressBar;
+    String category="";
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -42,6 +43,7 @@ public class DoctorListActivity extends AppCompatActivity {
 
         getSupportActionBar().setTitle("Doctors List");
 
+        category=getIntent().getStringExtra("category");
         userModelList=new ArrayList<>();
         progressBar=findViewById(R.id.progressBar);
         recyclerView=findViewById(R.id.recyclerView);
@@ -62,7 +64,7 @@ public class DoctorListActivity extends AppCompatActivity {
     private void getUserData() {
 
         progressBar.setVisibility(View.VISIBLE);
-        databaseReference.addListenerForSingleValueEvent(new ValueEventListener() {
+        databaseReference.orderByChild("expertise").equalTo(category).addListenerForSingleValueEvent(new ValueEventListener() {
             @Override
             public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
                 if (dataSnapshot.exists()) {

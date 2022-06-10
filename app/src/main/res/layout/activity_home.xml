@@ -159,17 +159,16 @@ android:text="@string/app_name"
                     >
 
                     <TextView
-                        android:id="@+id/online_medicine_store_btn"
+                        android:textAlignment="center"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
                         android:layout_marginStart="@dimen/_10dp"
                         android:layout_marginTop="@dimen/_10dp"
                         android:layout_marginEnd="@dimen/_10dp"
                         android:layout_marginBottom="@dimen/_10dp"
+
                         android:layout_toLeftOf="@+id/three"
-                        android:text="Online Medicine Store"
-                        android:textAlignment="center"
-                        android:textAllCaps="false"
+                        android:text="Online Medicine Store"                        android:textAllCaps="false"
                         android:textColor="@color/white"
                         android:textSize="20sp" />
 
@@ -194,7 +193,6 @@ android:text="@string/app_name"
                     >
 
                     <TextView
-                        android:id="@+id/online_ambulance_service"
                         android:textAlignment="center"
                         android:layout_width="match_parent"
                         android:layout_height="wrap_content"
@@ -202,6 +200,7 @@ android:text="@string/app_name"
                         android:layout_marginTop="@dimen/_10dp"
                         android:layout_marginEnd="@dimen/_10dp"
                         android:layout_marginBottom="@dimen/_10dp"
+
                         android:layout_toLeftOf="@+id/four"
                         android:text="Online Ambulance Service"
                         android:textColor="@color/white"

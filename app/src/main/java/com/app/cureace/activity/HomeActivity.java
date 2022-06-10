@@ -20,10 +20,16 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import com.app.cureace.R;
+import com.app.cureace.activity.ambulance.AmbulancesActivity;
+import com.app.cureace.activity.ambulance.MyAmbulanceBookingActivity;
 import com.app.cureace.activity.bedbooking.BedListActivity;
 import com.app.cureace.activity.bedbooking.MyBedBookingActivity;
+import com.app.cureace.activity.doctor.DoctorCategoryActivity;
 import com.app.cureace.activity.doctor.DoctorListActivity;
 import com.app.cureace.activity.doctor.MyAppointmentsActivity;
+import com.app.cureace.activity.medicines.CartActivity;
+import com.app.cureace.activity.medicines.MedicineListActivity;
+import com.app.cureace.activity.medicines.MyOrdersActivity;
 import com.app.cureace.utils.AppUtil;
 import com.google.android.material.navigation.NavigationView;
 import com.google.firebase.auth.FirebaseAuth;
@@ -38,11 +44,10 @@ public class HomeActivity extends AppCompatActivity {
 
     public DrawerLayout drawer;
     protected FrameLayout mDrawerLayout, actionBar;
-    private NavigationView navigationView;
+     private NavigationView navigationView;
     private RelativeLayout drawerHead;
     private TextView nameTV;
-    private TextView onlineMedicine;
-    private TextView onlineAmbulance;
+
 
     FirebaseUser firebaseUser;
     FirebaseAuth mAuth;
@@ -51,7 +56,7 @@ public class HomeActivity extends AppCompatActivity {
     public FirebaseDatabase mDatabase = FirebaseDatabase.getInstance();
     public DatabaseReference databaseReference ;
 
-RelativeLayout c_doc_btn,bed_btn;
+RelativeLayout c_doc_btn,bed_btn,medical_btn,ambulance_btn;
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -65,8 +70,8 @@ RelativeLayout c_doc_btn,bed_btn;
         navigationView = findViewById(R.id.nav_view);
         c_doc_btn = findViewById(R.id.c_doc_btn);
         bed_btn = findViewById(R.id.bed_btn);
-        onlineMedicine = findViewById(R.id.online_medicine_store_btn);
-        onlineAmbulance = findViewById(R.id.online_ambulance_service);
+        ambulance_btn = findViewById(R.id.ambulance_btn);
+        medical_btn = findViewById(R.id.medical_btn);
 
 
         sharedPref = getSharedPreferences(AppUtil.PREFS, 0);
@@ -84,7 +89,7 @@ RelativeLayout c_doc_btn,bed_btn;
             @Override
             public void onClick(View view) {
 
-               AppUtil.startActivity(HomeActivity.this, DoctorListActivity.class);
+               AppUtil.startActivity(HomeActivity.this, DoctorCategoryActivity.class);
             }
         });
 
@@ -94,17 +99,17 @@ RelativeLayout c_doc_btn,bed_btn;
 
                AppUtil.startActivity(HomeActivity.this, BedListActivity.class);
             }
-        });
-        onlineMedicine.setOnClickListener(new View.OnClickListener() {
+        });  ambulance_btn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Toast.makeText(HomeActivity.this, "Under Development", Toast.LENGTH_SHORT).show();
+
+               AppUtil.startActivity(HomeActivity.this, AmbulancesActivity.class);
             }
-        });
-        onlineAmbulance.setOnClickListener(new View.OnClickListener() {
+        }); medical_btn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
-                Toast.makeText(HomeActivity.this, "Under Development", Toast.LENGTH_SHORT).show();
+
+               AppUtil.startActivity(HomeActivity.this, MedicineListActivity.class);
             }
         });
     }
@@ -176,28 +181,28 @@ RelativeLayout c_doc_btn,bed_btn;
                         startActivity(manage_products);
                         drawer.closeDrawer(START);
                         break;
-                     /*
 
-                    case R.id.nav_product_ratings:
-                        Intent nav_product_ratings = new Intent(HomeActivity.this, RatingListActivity.class);
-                        nav_product_ratings.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP|Intent.FLAG_ACTIVITY_NEW_TASK);
-                        startActivity(nav_product_ratings);
+                        case R.id.nav_cart_list:
+                        Intent nav_cart_list = new Intent(HomeActivity.this, CartActivity.class);
+                            nav_cart_list.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP|Intent.FLAG_ACTIVITY_NEW_TASK);
+                        startActivity(nav_cart_list);
                         drawer.closeDrawer(START);
                         break;
 
-                    case R.id.nav_manage_orders:
-                        Intent nav_manage_orders = new Intent(HomeActivity.this, SellerOrdersActivity.class);
-                        nav_manage_orders.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP|Intent.FLAG_ACTIVITY_NEW_TASK);
-                        startActivity(nav_manage_orders);
+                        case R.id.nav_order:
+                        Intent nav_order = new Intent(HomeActivity.this, MyOrdersActivity.class);
+                            nav_order.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP|Intent.FLAG_ACTIVITY_NEW_TASK);
+                        startActivity(nav_order);
                         drawer.closeDrawer(START);
                         break;
 
-                    case R.id.nav_repair_requests:
-                        Intent nav_repair_requests = new Intent(HomeActivity.this, SellerRepairRequestsActivity.class);
-                        nav_repair_requests.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP|Intent.FLAG_ACTIVITY_NEW_TASK);
-                        startActivity(nav_repair_requests);
+                        case R.id.nav_ambulance_booking_list:
+                        Intent nav_ambulance_booking_list = new Intent(HomeActivity.this, MyAmbulanceBookingActivity.class);
+                            nav_ambulance_booking_list.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP|Intent.FLAG_ACTIVITY_NEW_TASK);
+                        startActivity(nav_ambulance_booking_list);
                         drawer.closeDrawer(START);
-                        break;*/
+                        break;
+
 
                     case R.id.nav_logout:
                         mAuth.signOut();

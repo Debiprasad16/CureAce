@@ -23,6 +23,18 @@
             android:id="@+id/nav_bed_booking_list"
              android:title="My Bed Booking List" />
 
+        <item
+            android:id="@+id/nav_cart_list"
+            android:title="My Cart" />
+
+        <item
+            android:id="@+id/nav_order"
+            android:title="My Orders" />
+        <item
+            android:id="@+id/nav_ambulance_booking_list"
+             android:title="My Ambulance Booking List" />
+
+
 
 
 
