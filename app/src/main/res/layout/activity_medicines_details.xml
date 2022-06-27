@@ -22,7 +22,7 @@
             android:orientation="vertical"
             android:layout_height="wrap_content"
             android:elevation="@dimen/_10dp"
-            app:cardBackgroundColor="@color/app_color"
+            app:cardBackgroundColor="@color/white"
 
             app:cardUseCompatPadding="true">
 
@@ -46,7 +46,7 @@
                     android:gravity="center_vertical"
                     android:text="Name"
                     android:textStyle="bold"
-                    android:textColor="@color/white"
+                    android:textColor="@color/black"
                     android:layout_margin="@dimen/_10dp"
                     android:textSize="@dimen/_20sp"/>
 
@@ -60,7 +60,7 @@
                     android:text="Hospital Name"
                     android:textStyle="bold"
 
-                    android:textColor="@color/white"
+                    android:textColor="@color/black"
                     android:layout_marginLeft="@dimen/_10dp"
                     android:layout_marginRight="@dimen/_10dp"
                     android:layout_marginBottom="@dimen/_10dp"
@@ -73,7 +73,7 @@
                     android:gravity="center_vertical"
                     android:text="Email"
 
-                    android:textColor="@color/white"
+                    android:textColor="@color/black"
                     android:layout_marginLeft="@dimen/_10dp"
                     android:layout_marginRight="@dimen/_10dp"
                     android:layout_marginBottom="@dimen/_10dp"
@@ -86,7 +86,7 @@
                     android:gravity="center_vertical"
                     android:text="Mobile"
 
-                    android:textColor="@color/white"
+                    android:textColor="@color/black"
                     android:layout_marginLeft="@dimen/_10dp"
                     android:layout_marginRight="@dimen/_10dp"
                     android:textSize="14sp"/>
@@ -98,25 +98,13 @@
                     android:gravity="center_vertical"
                     android:text="Working Days"
                     android:textStyle="bold"
-
-                    android:textColor="@color/white"
+                    android:textColor="@color/black"
                     android:layout_marginTop="@dimen/_10dp"
                     android:layout_marginLeft="@dimen/_10dp"
                     android:layout_marginRight="@dimen/_10dp"
                     android:layout_marginBottom="@dimen/_20dp"
-
                     android:textSize="16sp"/>
-
-
-
-
-
-
-
             </LinearLayout>
-
-
-
         </androidx.cardview.widget.CardView>
 
 
@@ -124,7 +112,7 @@
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:orientation="vertical"
-            android:background="@color/app_color"
+            android:background="@color/white"
             android:layout_below="@+id/relativeLayout"
             android:layout_margin="@dimen/_10dp"
             >
@@ -136,7 +124,7 @@
                 android:layout_height="wrap_content"
                 android:textSize="@dimen/_16sp"
                 android:layout_gravity="center"
-                android:textColor="@color/white"
+                android:textColor="@color/black"
                 android:textAlignment="center"
                 android:text="Quantity"/>
 
@@ -153,7 +141,7 @@
                     android:background="@drawable/solid_bg_app_color_round_corner"
                     android:text="-"
                     android:onClick="decreaseQuant"
-                    android:textColor="@color/white"
+                    android:textColor="@color/black"
                     />
                 <RelativeLayout
                     android:layout_width="wrap_content"
@@ -177,7 +165,7 @@
                         android:maxLength="3"
                         android:padding="@dimen/_10dp"
                         android:text="1"
-                        android:textColor="@color/white"
+                        android:textColor="@color/black"
                         android:textColorHint="#BFBFBF" />
 
                 </RelativeLayout>
@@ -187,13 +175,9 @@
                     android:background="@drawable/solid_bg_app_color_round_corner"
                     android:text="+"
                       android:onClick="increaseQuant"
-                    android:textColor="@color/white"
+                    android:textColor="@color/black"
                     />
-
             </LinearLayout>
-
-
-
         </LinearLayout>
     </RelativeLayout>
     </ScrollView>
