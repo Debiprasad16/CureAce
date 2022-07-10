@@ -14,8 +14,7 @@
         android:orientation="vertical"
         android:layout_height="wrap_content"
         android:elevation="@dimen/_10dp"
-        app:cardBackgroundColor="@color/app_color"
-
+        app:cardBackgroundColor="@color/teal_700"
         app:cardUseCompatPadding="true">
 
         <LinearLayout
@@ -40,7 +39,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:gravity="center_vertical"
-                android:text="expertise"
+                android:text="Expertise"
                 android:textStyle="bold"
                 android:textColor="@color/white"
                 android:layout_marginLeft="@dimen/_10dp"
@@ -101,15 +100,7 @@
                 android:layout_marginLeft="@dimen/_10dp"
                 android:layout_marginRight="@dimen/_10dp"
                 android:layout_marginBottom="@dimen/_20dp"
-
                 android:textSize="16sp"/>
-
-
-
-
-
-
-
         </LinearLayout>
     </androidx.cardview.widget.CardView>
 
@@ -117,9 +108,11 @@
     <LinearLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
+        android:paddingLeft="3dp"
+        android:layout_marginLeft="4dp"
+        android:layout_marginRight="4dp"
         android:layout_below="@+id/relativeLayout"
-        android:background="@color/app_color"
-
+        android:background="@color/teal_700"
         android:orientation="vertical">
 
 
@@ -157,7 +150,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="80dp"
                     android:backgroundTint="@android:color/transparent"
-                    android:hint="write any extra information"
+                    android:hint="Write any additional information..."
                     android:inputType="textMultiLine"
                     android:padding="@dimen/_10dp"
 
@@ -199,7 +192,16 @@
             android:layout_gravity="center"
             android:textColor="@color/white"
             android:textAlignment="center"
-            android:text="Select your appointment date and time"/>
+            android:text="Select your appointment Date and Time"/>
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="10dp"
+            android:textSize="15sp"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:text="N.B.: Please choose your Date and Time Carefully according to Doctor Availability."
+            />
     </LinearLayout>
 
 

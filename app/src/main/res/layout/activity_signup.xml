@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/app_color"
+    android:background="@color/teal_700"
     tools:context=".activity.SignupActivity">
     <ProgressBar
         android:id="@+id/signUp_progress"
@@ -353,7 +353,7 @@
             android:text="Signup"
             android:background="@drawable/solid_bg_app_color_round_corner"
             android:layout_gravity="center"
-            android:layout_marginTop="40dp"
+            android:layout_marginTop="30dp"
             />
 
 
@@ -376,7 +376,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:textSize="@dimen/_16sp"
-                android:textColor="@color/greencolor"
+                android:textColor="@color/white"
                 android:layout_marginTop="@dimen/_20dp"
                 android:textStyle="bold"
                 android:onClick="openLogin"

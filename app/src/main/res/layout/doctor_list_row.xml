@@ -6,7 +6,7 @@
     android:orientation="vertical"
     android:layout_height="wrap_content"
     android:elevation="@dimen/_10dp"
-    app:cardBackgroundColor="@color/app_color"
+    app:cardBackgroundColor="@color/teal_700"
     app:cardUseCompatPadding="true">
 
     <LinearLayout
@@ -31,7 +31,7 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:gravity="center_vertical"
-        android:text="expertise"
+        android:text="Expertise"
         android:textStyle="bold"
         android:textColor="@color/white"
         android:layout_marginLeft="@dimen/_10dp"

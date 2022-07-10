@@ -11,7 +11,7 @@
     <!-- Action-bar looking view -->
     <FrameLayout
         android:id="@+id/actionBar"
-        android:background="@color/app_color"
+        android:background="@color/teal_700"
         android:layout_width="match_parent"
         android:layout_height="56dp">
 
@@ -236,7 +236,7 @@ android:text="@string/app_name"
             app:itemIconPadding="15dp"
             app:itemTextAppearance="@style/NavTextAppearance"
             app:menu="@menu/base_activity_drawer"
-            android:background="@color/app_color"
+            android:background="@color/teal_700"
             app:itemIconTint="@color/white"
             app:headerLayout="@layout/nav_header">
 

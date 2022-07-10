@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:background="@color/app_color"
+    android:background="@color/teal_700"
     tools:context=".activity.LoginActivity">
 
     <ProgressBar
@@ -78,7 +78,7 @@
 
                     android:inputType="textEmailAddress"
                     android:padding="@dimen/_10dp"
-                    android:textColor="@color/greencolor"
+                    android:textColor="@color/white"
                     android:textColorHint="#FFFAFA" />
 
             </LinearLayout>
@@ -120,8 +120,8 @@
                     android:padding="@dimen/_10dp"
                     android:hint="Enter your password"
 
-                    android:textColor="@color/greencolor"
-                    android:textColorHint="#BFBFBF" />
+                    android:textColor="@color/white"
+                    android:textColorHint="#FFFAFA" />
 
 
             </RelativeLayout>
@@ -171,7 +171,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:textSize="@dimen/_16sp"
-                android:textColor="@color/greencolor"
+                android:textColor="@color/white"
                 android:layout_marginTop="@dimen/_20dp"
                 android:textStyle="bold"
                 android:onClick="openSignup"

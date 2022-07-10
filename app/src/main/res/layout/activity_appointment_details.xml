@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/greencolor"
+    android:background="@color/app_color"
     tools:context=".activity.doctor.AppointmentDetailsActivity">
 
     <androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
@@ -123,7 +123,7 @@
                 android:text="Kindly visit half an hour before appointment date schedule"
                 android:textStyle="bold"
 
-                android:textColor="@color/greencolor"
+                android:textColor="@color/app_color"
                 android:layout_marginTop="@dimen/_20dp"
                 android:layout_marginLeft="@dimen/_10dp"
                 android:layout_marginRight="@dimen/_10dp"

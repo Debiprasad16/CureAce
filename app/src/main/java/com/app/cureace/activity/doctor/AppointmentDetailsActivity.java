@@ -37,9 +37,9 @@ public class AppointmentDetailsActivity extends AppCompatActivity {
         appointmentid_tv.setText("Id :" + appointmentModel.getAppointment_id());
         name_tv.setText("Doctor Name : "+appointmentModel.getDoctor_name());
         expertise_tv.setText("Expertise :" + appointmentModel.getExpertise());
-        h_name_tv.setText("at "+appointmentModel.getHospital_name()+ " Hospital, " +appointmentModel.getHospital_address());
-        email_tv.setText("email : " +appointmentModel.getDoctor_email());
-        mobile_tv.setText("mobile : " +appointmentModel.getDoctor_mobile_no());
+        h_name_tv.setText("At "+appointmentModel.getHospital_name()+ " Hospital, " +appointmentModel.getHospital_address());
+        email_tv.setText("Email : " +appointmentModel.getDoctor_email());
+        mobile_tv.setText("Mobile : " +appointmentModel.getDoctor_mobile_no());
         date_tv.setText("Appointment Date : " +appointmentModel.getSelected_date()+" " +appointmentModel.getSelected_time());
     }
 

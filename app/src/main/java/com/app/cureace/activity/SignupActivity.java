@@ -6,6 +6,7 @@ import androidx.appcompat.widget.AppCompatButton;
 
 import android.content.Intent;
 import android.os.Bundle;
+import android.util.Patterns;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
@@ -56,12 +57,30 @@ public class SignupActivity extends AppCompatActivity {
         signup_btn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
+                String userName = name_et.getText().toString();
+                String userEmail = email_et.getText().toString();
+                String userPassword = password_et.getText().toString();
+                String userMobile = mobile_et.getText().toString();
+                String userIdproof = idproof_et.getText().toString();
+                String userAddress = address_et.getText().toString();
 
                 if (!confirmpassword_et.getText().toString().equals(password_et.getText().toString()))
                 {
                     confirmpassword_et.setError("confirm password not matched!");
+                }else if (userName.isEmpty()){
+                    Toast.makeText(SignupActivity.this, "Please Enter your Name.", Toast.LENGTH_SHORT).show();
+                }else if (!Patterns.EMAIL_ADDRESS.matcher(userEmail).matches()){
+                    Toast.makeText(SignupActivity.this, "Please Enter a valid email address.", Toast.LENGTH_SHORT).show();
+                }else if (userPassword.isEmpty()){
+                    Toast.makeText(SignupActivity.this, "Please Enter your unique 8 digit Password.", Toast.LENGTH_SHORT).show();
+                }else if (!Patterns.PHONE.matcher(userMobile).matches()){
+                    Toast.makeText(SignupActivity.this, "Please Enter a valid mobile number.", Toast.LENGTH_SHORT).show();
+                }else if (userIdproof.isEmpty()){
+                    Toast.makeText(SignupActivity.this, "Please Enter your ID Proof.", Toast.LENGTH_SHORT).show();
+                }else if (userAddress.isEmpty()){
+                    Toast.makeText(SignupActivity.this, "Please Enter your Address.", Toast.LENGTH_SHORT).show();
                 }else {
-                    signupFirebase(name_et.getText().toString(), email_et.getText().toString(), password_et.getText().toString(), mobile_et.getText().toString(), address_et.getText().toString(), idproof_et.getText().toString());
+                    signupFirebase(userName, userEmail, userPassword, userMobile, userIdproof,userAddress);
                 }
             }
         });

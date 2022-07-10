@@ -8,41 +8,27 @@
         <item
             android:id="@+id/nav_home"
              android:title="Home" />
-
         <item
             android:id="@+id/nav_profile"
              android:title="My Profile" />
-
-
-
         <item
             android:id="@+id/nav_my_appointment"
              android:title="My Appointments" />
-
         <item
             android:id="@+id/nav_bed_booking_list"
              android:title="My Bed Booking List" />
-
         <item
             android:id="@+id/nav_cart_list"
             android:title="My Cart" />
-
         <item
             android:id="@+id/nav_order"
             android:title="My Orders" />
         <item
             android:id="@+id/nav_ambulance_booking_list"
              android:title="My Ambulance Booking List" />
-
-
-
-
-
         <item
             android:id="@+id/nav_logout"
              android:title="Log Out" />
-
-
 
     </group>
 
