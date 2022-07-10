@@ -90,7 +90,7 @@ public class SignupActivity extends AppCompatActivity {
 
     }
 
-    private void signupFirebase(String name,String email,String password,String mob,String address,String idproof)
+    private void signupFirebase(String name,String email,String password,String mob,String idproof,String address)
     {
         UserModel userModel =new UserModel();
         userModel.setUser_name(name);
