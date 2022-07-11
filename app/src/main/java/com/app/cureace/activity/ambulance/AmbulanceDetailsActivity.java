@@ -61,8 +61,8 @@ public class AmbulanceDetailsActivity extends AppCompatActivity implements Payme
         name_tv.setText(ambulanceModel.getHospital_name());
         h_name_tv.setText("Ambulance number : "+ambulanceModel.getAmbulance_number());
         email_tv.setText("Address : " +ambulanceModel.getAddress());
-        mobile_tv.setText("mobile No: " +ambulanceModel.getMobile_no());
-        working_days_tv.setText("Cost: " +ambulanceModel.getCost() + " Rs" );
+        mobile_tv.setText("Mobile No: " +ambulanceModel.getMobile_no());
+        working_days_tv.setText("Cost: ₹" +ambulanceModel.getCost());
 
 
 

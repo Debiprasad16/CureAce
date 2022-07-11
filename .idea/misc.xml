@@ -49,18 +49,33 @@
         <entry key="..\:/Users/Debiprasad/AndroidStudioProjects/CureAce/app/src/main/res/layout/activity_ambulance_details.xml" value="0.25" />
         <entry key="..\:/Users/Debiprasad/AndroidStudioProjects/CureAce/app/src/main/res/layout/activity_ambulances.xml" value="0.25" />
         <entry key="..\:/Users/Debiprasad/AndroidStudioProjects/CureAce/app/src/main/res/layout/activity_appointment_details.xml" value="0.25" />
-        <entry key="..\:/Users/Debiprasad/AndroidStudioProjects/CureAce/app/src/main/res/layout/activity_doctor_category.xml" value="0.25" />
+        <entry key="..\:/Users/Debiprasad/AndroidStudioProjects/CureAce/app/src/main/res/layout/activity_bed_details.xml" value="0.20521590423257802" />
+        <entry key="..\:/Users/Debiprasad/AndroidStudioProjects/CureAce/app/src/main/res/layout/activity_bed_list.xml" value="0.20521590423257802" />
+        <entry key="..\:/Users/Debiprasad/AndroidStudioProjects/CureAce/app/src/main/res/layout/activity_doctor_category.xml" value="0.20261713803292528" />
         <entry key="..\:/Users/Debiprasad/AndroidStudioProjects/CureAce/app/src/main/res/layout/activity_doctor_details.xml" value="0.20521590423257802" />
+        <entry key="..\:/Users/Debiprasad/AndroidStudioProjects/CureAce/app/src/main/res/layout/activity_doctor_list.xml" value="0.20521590423257802" />
         <entry key="..\:/Users/Debiprasad/AndroidStudioProjects/CureAce/app/src/main/res/layout/activity_forgot_passsword.xml" value="0.20521590423257802" />
         <entry key="..\:/Users/Debiprasad/AndroidStudioProjects/CureAce/app/src/main/res/layout/activity_home.xml" value="0.20521590423257802" />
         <entry key="..\:/Users/Debiprasad/AndroidStudioProjects/CureAce/app/src/main/res/layout/activity_login.xml" value="0.20261713803292528" />
         <entry key="..\:/Users/Debiprasad/AndroidStudioProjects/CureAce/app/src/main/res/layout/activity_main.xml" value="0.1" />
         <entry key="..\:/Users/Debiprasad/AndroidStudioProjects/CureAce/app/src/main/res/layout/activity_medicine_list.xml" value="0.25" />
         <entry key="..\:/Users/Debiprasad/AndroidStudioProjects/CureAce/app/src/main/res/layout/activity_medicines_details.xml" value="0.25" />
+        <entry key="..\:/Users/Debiprasad/AndroidStudioProjects/CureAce/app/src/main/res/layout/activity_my_ambulance_booking.xml" value="0.20521590423257802" />
+        <entry key="..\:/Users/Debiprasad/AndroidStudioProjects/CureAce/app/src/main/res/layout/activity_my_ambulance_booking_details.xml" value="0.20521590423257802" />
+        <entry key="..\:/Users/Debiprasad/AndroidStudioProjects/CureAce/app/src/main/res/layout/activity_my_appointments.xml" value="0.20521590423257802" />
+        <entry key="..\:/Users/Debiprasad/AndroidStudioProjects/CureAce/app/src/main/res/layout/activity_my_bed_booking.xml" value="0.20521590423257802" />
+        <entry key="..\:/Users/Debiprasad/AndroidStudioProjects/CureAce/app/src/main/res/layout/activity_my_bed_booking_details.xml" value="0.20521590423257802" />
+        <entry key="..\:/Users/Debiprasad/AndroidStudioProjects/CureAce/app/src/main/res/layout/activity_my_orders.xml" value="0.20521590423257802" />
+        <entry key="..\:/Users/Debiprasad/AndroidStudioProjects/CureAce/app/src/main/res/layout/activity_order_details.xml" value="0.20521590423257802" />
         <entry key="..\:/Users/Debiprasad/AndroidStudioProjects/CureAce/app/src/main/res/layout/activity_profile.xml" value="0.20521590423257802" />
         <entry key="..\:/Users/Debiprasad/AndroidStudioProjects/CureAce/app/src/main/res/layout/activity_signup.xml" value="0.20261713803292528" />
+        <entry key="..\:/Users/Debiprasad/AndroidStudioProjects/CureAce/app/src/main/res/layout/appointment_row.xml" value="0.20521590423257802" />
+        <entry key="..\:/Users/Debiprasad/AndroidStudioProjects/CureAce/app/src/main/res/layout/cart_list_row.xml" value="0.20521590423257802" />
         <entry key="..\:/Users/Debiprasad/AndroidStudioProjects/CureAce/app/src/main/res/layout/doctor_list_row.xml" value="0.20261713803292528" />
+        <entry key="..\:/Users/Debiprasad/AndroidStudioProjects/CureAce/app/src/main/res/layout/medicine_list_row.xml" value="0.20521590423257802" />
         <entry key="..\:/Users/Debiprasad/AndroidStudioProjects/CureAce/app/src/main/res/layout/nav_header.xml" value="0.25" />
+        <entry key="..\:/Users/Debiprasad/AndroidStudioProjects/CureAce/app/src/main/res/layout/order_cart_list_row.xml" value="0.20521590423257802" />
+        <entry key="..\:/Users/Debiprasad/AndroidStudioProjects/CureAce/app/src/main/res/layout/orders_list_row.xml" value="0.20521590423257802" />
         <entry key="..\:/Users/Debiprasad/AndroidStudioProjects/CureAce/app/src/main/res/menu/base_activity_drawer.xml" value="0.25" />
         <entry key="..\:/Users/Debiprasad/AndroidStudioProjects/CureAce/app/src/main/res/mipmap-anydpi-v26/ic_launcher.xml" value="0.157" />
         <entry key="..\:/Users/Debiprasad/AndroidStudioProjects/CureAce/app/src/main/res/mipmap-anydpi-v26/ic_launcher_logo.xml" value="0.157" />

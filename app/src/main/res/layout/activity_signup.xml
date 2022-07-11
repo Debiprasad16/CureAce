@@ -66,7 +66,7 @@
 
                     android:inputType="textPersonName"
                     android:padding="@dimen/_10dp"
-                    android:textColor="@color/greencolor"
+                    android:textColor="@color/white"
                     android:textColorHint="#BFBFBF" />
 
             </LinearLayout>
@@ -107,7 +107,7 @@
                     android:layout_width="match_parent"
                     android:layout_height="wrap_content"
                     android:backgroundTint="@android:color/transparent"
-                    android:textColor="@color/greencolor"
+                    android:textColor="@color/white"
                     android:inputType="textEmailAddress"
                     android:padding="@dimen/_10dp"
                     android:hint="Enter your email"
@@ -157,7 +157,7 @@
                     android:inputType="textPassword"
                     android:padding="@dimen/_10dp"
 
-                    android:textColor="@color/greencolor"
+                    android:textColor="@color/white"
                     android:textColorHint="#BFBFBF" />
 
             </RelativeLayout>
@@ -202,7 +202,7 @@
                     android:inputType="textPassword"
                     android:padding="@dimen/_10dp"
 
-                    android:textColor="@color/greencolor"
+                    android:textColor="@color/white"
                     android:textColorHint="#BFBFBF" />
 
             </RelativeLayout>
@@ -247,7 +247,7 @@
                     android:inputType="number"
                     android:maxLength="10"
                     android:padding="@dimen/_10dp"
-                    android:textColor="@color/greencolor"
+                    android:textColor="@color/white"
                     android:textColorHint="#BFBFBF" />
 
             </RelativeLayout>
@@ -293,7 +293,7 @@
                     android:inputType="text"
                     android:maxLines="1"
                     android:padding="@dimen/_10dp"
-                    android:textColor="@color/greencolor"
+                    android:textColor="@color/white"
                     android:textColorHint="#BFBFBF" />
 
             </RelativeLayout>
@@ -337,7 +337,7 @@
                     android:padding="@dimen/_10dp"
                     android:hint="Enter address"
 
-                    android:textColor="@color/greencolor"
+                    android:textColor="@color/white"
                     android:textColorHint="#BFBFBF" />
 
             </RelativeLayout>

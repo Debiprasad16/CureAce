@@ -74,8 +74,6 @@ public class DoctorListActivity extends AppCompatActivity {
 
                     for (DataSnapshot ds: dataSnapshot.getChildren())
                     {
-
-
                         DoctorModel doctorModel=new DoctorModel();
                         doctorModel.setId(ds.child("id").getValue().toString());
                         doctorModel.setName(ds.child("name").getValue().toString());

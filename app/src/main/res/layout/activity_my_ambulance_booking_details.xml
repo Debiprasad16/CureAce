@@ -14,7 +14,7 @@
         android:orientation="vertical"
         android:layout_height="wrap_content"
         android:elevation="@dimen/_10dp"
-        app:cardBackgroundColor="@color/app_color"
+        app:cardBackgroundColor="@color/teal_700"
 
         app:cardUseCompatPadding="true">
 

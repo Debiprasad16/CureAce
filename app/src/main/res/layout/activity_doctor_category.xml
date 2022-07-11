@@ -24,13 +24,15 @@
             android:text="Dentists"
             android:textSize="10sp"
             android:onClick="openDentist"
+            android:tooltipText="@string/dentist_desc"
             android:background="@drawable/solid_bg_app_color_round_corner"
             android:textColor="@color/white"/> '
         <androidx.appcompat.widget.AppCompatButton
             android:layout_width="@dimen/_20dp"
             android:layout_height="80dp"
             android:layout_weight="1"
-            android:text="Cardiologist"
+            android:text="Cardiologists"
+            android:tooltipText="@string/cardiologist_desc"
             android:textSize="10sp"
             android:onClick="openCardio"
             android:layout_marginLeft="@dimen/_10dp"
@@ -40,7 +42,8 @@
             android:layout_width="@dimen/_20dp"
             android:layout_height="80dp"
             android:layout_weight="1"
-            android:text="Gynaecologist"
+            android:text="Gynecologists"
+            android:tooltipText="@string/gynecologist_desc"
             android:textSize="10sp"
             android:onClick="openGyna"
             android:layout_marginLeft="@dimen/_10dp"
@@ -65,6 +68,7 @@
             android:layout_height="80dp"
             android:layout_weight="1"
             android:text="Psychiatrists"
+            android:tooltipText="@string/psychiatrist_desc"
             android:textSize="10sp"
             android:onClick="openPsy"
             android:background="@drawable/solid_bg_app_color_round_corner"
@@ -73,7 +77,8 @@
             android:layout_width="@dimen/_20dp"
             android:layout_height="80dp"
             android:layout_weight="1"
-            android:text="Radiologist"
+            android:text="Radiologists"
+            android:tooltipText="@string/radiologist_desc"
             android:textSize="10sp"
             android:onClick="openRadio"
             android:layout_marginLeft="@dimen/_10dp"
@@ -83,7 +88,8 @@
             android:layout_width="@dimen/_20dp"
             android:layout_height="80dp"
             android:layout_weight="1"
-            android:text="Neurologist"
+            android:text="Neurologists"
+            android:tooltipText="@string/neurologist_desc"
             android:onClick="openNeu"
             android:textSize="10sp"
             android:layout_marginLeft="@dimen/_10dp"
@@ -107,6 +113,7 @@
             android:layout_height="80dp"
             android:layout_weight="1"
             android:text="Dermatologists"
+            android:tooltipText="@string/dermatologist_desc"
             android:onClick="openDer"
             android:textSize="10sp"
             android:background="@drawable/solid_bg_app_color_round_corner"
@@ -116,6 +123,7 @@
             android:layout_height="80dp"
             android:layout_weight="1"
             android:text="Nephrologists"
+            android:tooltipText="@string/nephrologist_desc"
             android:onClick="openNeph"
             android:textSize="10sp"
             android:layout_marginLeft="@dimen/_10dp"
@@ -126,6 +134,7 @@
             android:layout_height="80dp"
             android:layout_weight="1"
             android:text="Endocrinologists"
+            android:tooltipText="@string/endocrinologist_desc"
             android:textSize="10sp"
             android:onClick="openEndo"
             android:layout_marginLeft="@dimen/_10dp"
@@ -133,5 +142,25 @@
             android:textColor="@color/white"/>
 
     </LinearLayout>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="11dp"
+        android:layout_marginRight="11dp"
+        android:text="N.B.:"
+        android:textSize="20sp"
+        android:textStyle="bold"/>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="11dp"
+        android:layout_marginRight="11dp"
+        android:text="@string/nbpt"
+        android:textSize="17sp"
+        android:textStyle="bold"/>
 
 </LinearLayout>

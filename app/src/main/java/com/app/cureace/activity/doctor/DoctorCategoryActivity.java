@@ -46,14 +46,14 @@ public class DoctorCategoryActivity extends AppCompatActivity {
 
     public void openGyna(View view) {
         Intent intent = new Intent(DoctorCategoryActivity.this, DoctorListActivity.class);
-        intent.putExtra("category","Gynaecologist");
+        intent.putExtra("category","Gynecologist");
         intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP|Intent.FLAG_ACTIVITY_NEW_TASK);
         startActivity(intent);
     }
 
     public void openPsy(View view) {
         Intent intent = new Intent(DoctorCategoryActivity.this, DoctorListActivity.class);
-        intent.putExtra("category","Psychiatrists");
+        intent.putExtra("category","Psychiatrist");
         intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP|Intent.FLAG_ACTIVITY_NEW_TASK);
         startActivity(intent);
     }
@@ -75,21 +75,21 @@ public class DoctorCategoryActivity extends AppCompatActivity {
 
     public void openDer(View view) {
         Intent intent = new Intent(DoctorCategoryActivity.this, DoctorListActivity.class);
-        intent.putExtra("category","Dermatologists");
+        intent.putExtra("category","Dermatologist");
         intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP|Intent.FLAG_ACTIVITY_NEW_TASK);
         startActivity(intent);
     }
 
     public void openNeph(View view) {
         Intent intent = new Intent(DoctorCategoryActivity.this, DoctorListActivity.class);
-        intent.putExtra("category","Nephrologists");
+        intent.putExtra("category","Nephrologist");
         intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP|Intent.FLAG_ACTIVITY_NEW_TASK);
         startActivity(intent);
     }
 
     public void openEndo(View view) {
         Intent intent = new Intent(DoctorCategoryActivity.this, DoctorListActivity.class);
-        intent.putExtra("category","Endocrinologists");
+        intent.putExtra("category","Endocrinologist");
         intent.addFlags(Intent.FLAG_ACTIVITY_CLEAR_TOP|Intent.FLAG_ACTIVITY_NEW_TASK);
         startActivity(intent);
     }

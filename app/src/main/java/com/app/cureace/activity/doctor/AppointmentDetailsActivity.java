@@ -12,7 +12,7 @@ import com.app.cureace.model.AppointmentModel;
 import com.app.cureace.utils.AppUtil;
 
 public class AppointmentDetailsActivity extends AppCompatActivity {
-    public TextView appointmentid_tv,name_tv,expertise_tv,h_name_tv,email_tv,mobile_tv,working_days_tv,date_tv;
+    public TextView appointmentid_tv,name_tv,expertise_tv,h_name_tv,email_tv,mobile_tv,working_days_tv,date_tv/*, appointment_fee_tv*/;
     SharedPreferences sharedPref;
 
     AppointmentModel appointmentModel;
@@ -32,6 +32,7 @@ public class AppointmentDetailsActivity extends AppCompatActivity {
         email_tv = findViewById(R.id.email_tv);
         mobile_tv = findViewById(R.id.mobile_tv);
         date_tv = findViewById(R.id.date_tv);
+        //appointment_fee_tv = findViewById(R.id.appointment_fee_tv);
 
         getSupportActionBar().setTitle(appointmentModel.getAppointment_id());
         appointmentid_tv.setText("Id :" + appointmentModel.getAppointment_id());
@@ -40,6 +41,7 @@ public class AppointmentDetailsActivity extends AppCompatActivity {
         h_name_tv.setText("At "+appointmentModel.getHospital_name()+ " Hospital, " +appointmentModel.getHospital_address());
         email_tv.setText("Email : " +appointmentModel.getDoctor_email());
         mobile_tv.setText("Mobile : " +appointmentModel.getDoctor_mobile_no());
+        //appointment_fee_tv.setText("Appointment Fee : ₹" +appointmentModel.getAppointment_fee());
         date_tv.setText("Appointment Date : " +appointmentModel.getSelected_date()+" " +appointmentModel.getSelected_time());
     }
 

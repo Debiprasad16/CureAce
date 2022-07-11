@@ -78,10 +78,10 @@ public class DoctorDetailsActivity extends AppCompatActivity implements DatePick
 
         name_tv.setText(doctorModel.getName());
         expertise_tv.setText(doctorModel.getExpertise());
-        h_name_tv.setText("at "+doctorModel.getHospital_name()+ "\n" +doctorModel.getHospital_address());
-        email_tv.setText("email : " +doctorModel.getEmail());
-        mobile_tv.setText("mobile : " +doctorModel.getMobile_no());
-        working_days_tv.setText("Working days : " +doctorModel.getWorking_days());
+        h_name_tv.setText("At "+doctorModel.getHospital_name()+ "\n" +doctorModel.getHospital_address());
+        email_tv.setText("Email : " +doctorModel.getEmail());
+        mobile_tv.setText("Mobile : " +doctorModel.getMobile_no());
+        working_days_tv.setText("Working Days : " +doctorModel.getWorking_days());
 
         date_btn.setOnClickListener(new View.OnClickListener() {
             @Override

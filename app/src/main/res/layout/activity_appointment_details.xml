@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    android:background="@color/app_color"
+    android:background="@color/teal_700"
     tools:context=".activity.doctor.AppointmentDetailsActivity">
 
     <androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
@@ -14,7 +14,7 @@
         android:orientation="vertical"
         android:layout_height="wrap_content"
         android:elevation="@dimen/_10dp"
-        app:cardBackgroundColor="@color/app_color"
+        app:cardBackgroundColor="@color/teal_700"
 
         app:cardUseCompatPadding="true">
 
@@ -28,7 +28,7 @@
                 android:id="@+id/appointmentid_tv"
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
-                 android:text="idfsfsf"
+                android:text="ABCD"
                 android:textStyle="bold"
                 android:textColor="@color/white"
                 android:layout_margin="@dimen/_10dp"
@@ -120,10 +120,9 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:gravity="center_vertical"
-                android:text="Kindly visit half an hour before appointment date schedule"
-                android:textStyle="bold"
-
-                android:textColor="@color/app_color"
+                android:text="Kindly visit half an hour before appointment date schedule."
+                android:textStyle="bold|italic"
+                android:textColor="@color/white"
                 android:layout_marginTop="@dimen/_20dp"
                 android:layout_marginLeft="@dimen/_10dp"
                 android:layout_marginRight="@dimen/_10dp"

@@ -14,7 +14,7 @@
         android:orientation="vertical"
         android:layout_height="wrap_content"
         android:elevation="@dimen/_10dp"
-        app:cardBackgroundColor="@color/app_color"
+        app:cardBackgroundColor="@color/teal_700"
 
         app:cardUseCompatPadding="true">
 
@@ -104,25 +104,28 @@
 
     <LinearLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:orientation="vertical"
-        android:background="@color/app_color"
+        android:layout_height="160dp"
         android:layout_below="@+id/relativeLayout"
-        android:layout_margin="@dimen/_10dp"
-        >
+        android:layout_marginStart="@dimen/_10dp"
+        android:layout_marginTop="@dimen/_10dp"
+        android:layout_marginEnd="@dimen/_10dp"
+        android:layout_marginBottom="@dimen/_10dp"
+        android:background="@color/teal_700"
+        android:orientation="vertical">
+
         <LinearLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:weightSum="2"
             android:layout_margin="@dimen/_10dp"
-            android:orientation="horizontal">
+            android:orientation="horizontal"
+            android:weightSum="2">
+
             <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/start_date_btn"
                 android:layout_width="@dimen/_20dp"
                 android:layout_height="wrap_content"
-                android:text="Select Start Date"
                 android:layout_weight="2"
-                android:id="@+id/start_date_btn"
-                />
+                android:text="Select Start Date" />
 
         </LinearLayout>
 
@@ -130,20 +133,21 @@
             android:id="@+id/date_tv"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:textSize="@dimen/_16sp"
             android:layout_gravity="center"
-            android:textColor="@color/white"
+            android:text="Select start date from booking and write no. of days"
             android:textAlignment="center"
-            android:text="Select start date from booking and write no. of days"/>
+            android:textColor="@color/white"
+            android:textSize="@dimen/_16sp" />
+
         <RelativeLayout
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_marginRight="@dimen/_10dp"
-            android:background="@drawable/textfield_bg"
-            android:orientation="vertical"
             android:layout_gravity="center"
             android:layout_marginLeft="@dimen/_10dp"
             android:layout_marginTop="@dimen/_10dp"
+            android:layout_marginRight="@dimen/_10dp"
+            android:background="@drawable/textfield_bg"
+            android:orientation="vertical"
 
 
             >

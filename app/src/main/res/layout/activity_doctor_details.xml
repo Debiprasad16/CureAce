@@ -101,6 +101,18 @@
                 android:layout_marginRight="@dimen/_10dp"
                 android:layout_marginBottom="@dimen/_20dp"
                 android:textSize="16sp"/>
+            <!--<TextView
+                android:id="@+id/appointment_fee_tv"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:text="Appointment Fee"
+                android:textStyle="bold"
+                android:textColor="@color/white"
+                android:layout_marginLeft="@dimen/_10dp"
+                android:layout_marginRight="@dimen/_10dp"
+                android:layout_marginBottom="@dimen/_20dp"
+                android:textSize="16sp"/>-->
         </LinearLayout>
     </androidx.cardview.widget.CardView>
 
