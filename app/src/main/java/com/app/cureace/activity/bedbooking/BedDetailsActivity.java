@@ -70,10 +70,10 @@ public class BedDetailsActivity extends AppCompatActivity implements DatePickerD
         getSupportActionBar().setTitle(bedModel.getHospital_name());
 
         name_tv.setText(bedModel.getHospital_name());
-        h_name_tv.setText("address : "+bedModel.getHospital_address());
-        email_tv.setText("email : " +bedModel.getEmail());
-        mobile_tv.setText("mobile : " +bedModel.getMobile_no());
-        working_days_tv.setText("Available Beds: " +bedModel.getAvailable_beds() + "\nBed Cost :" + bedModel.getBed_cost()+"/bed");
+        h_name_tv.setText("Address : "+bedModel.getHospital_address());
+        email_tv.setText("Email : " +bedModel.getEmail());
+        mobile_tv.setText("Mobile : " +bedModel.getMobile_no());
+        working_days_tv.setText("Available Beds: " +bedModel.getAvailable_beds() + "\nBed Cost : ₹" + bedModel.getBed_cost()+"/Day for 1 Bed.");
 
         start_date_btn.setOnClickListener(new View.OnClickListener() {
             @Override

@@ -65,7 +65,7 @@ public class MedicinesDetailsActivity extends AppCompatActivity {
 
         name_tv.setText(medicineModel.getM_title());
         h_name_tv.setText("Description : "+medicineModel.getM_description());
-        email_tv.setText("Price : " +medicineModel.getM_price()+" Rs");
+        email_tv.setText("Price : ₹" +medicineModel.getM_price());
         mobile_tv.setText("Mfg Date : " +medicineModel.getM_mf_date());
         working_days_tv.setText("Expiry Date: " +medicineModel.getM_exp_date());
 
@@ -78,7 +78,7 @@ public class MedicinesDetailsActivity extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 if (quantity_et.getText().toString().isEmpty())
-                    Toast.makeText(MedicinesDetailsActivity.this, "please enter quantity", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(MedicinesDetailsActivity.this, "Please select quantity.", Toast.LENGTH_SHORT).show();
                 else
                     addToCart( quantity_et.getText().toString());
             }
@@ -147,7 +147,7 @@ public class MedicinesDetailsActivity extends AppCompatActivity {
                             if (task.isSuccessful())
                             {
                                 progressBar.setVisibility(View.GONE);
-                                Toast.makeText(MedicinesDetailsActivity.this, "product added to cart! Please check my cart section.", Toast.LENGTH_LONG).show();
+                                Toast.makeText(MedicinesDetailsActivity.this, "Product added to cart :) Please check my cart section.", Toast.LENGTH_LONG).show();
                                 onBackPressed();
                             }else
                             {

@@ -46,7 +46,7 @@ public class BedListAdapter extends RecyclerView.Adapter<BedListAdapter.ViewHold
     @Override
     public void onBindViewHolder(@NonNull BedListAdapter.ViewHolder holder, int position) {
 
-        holder.name_tv.setText(bedList.get(position).getHospital_name() + " Hospital");
+        holder.name_tv.setText(bedList.get(position).getHospital_name());
         holder.expertise_tv.setText("Address : "+bedList.get(position).getHospital_address());
         holder.h_name_tv.setText("Available Beds  : " +bedList.get(position).getAvailable_beds());
 
