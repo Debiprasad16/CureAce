@@ -107,7 +107,7 @@ public class BedBookingAdapter extends RecyclerView.Adapter<BedBookingAdapter.Vi
                 .child(userList.get(position).getUser_id()).child(userList.get(position).getId());
         mDatabaseRef.removeValue();
         viewHolder.itemView.setVisibility(View.GONE);
-        Toast.makeText(context, "bed booking has been deleted!", Toast.LENGTH_SHORT).show();
+        Toast.makeText(context, "Bed Booked has been cancelled.", Toast.LENGTH_SHORT).show();
         userList.remove(position);
         notifyItemRemoved(position);
         notifyItemRangeChanged(position, userList.size());

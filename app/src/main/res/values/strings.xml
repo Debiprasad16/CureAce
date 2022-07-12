@@ -6,12 +6,17 @@
     <string name="secret_key">VTAMztbD2eF4VvRGrDwSBNvu</string>
     <string name="dentist_desc">A person who is qualified to treat diseases and other conditions that affect the teeth and gums.</string>
     <string name="cardiologist_desc">A doctor who specializes in the study or treatment of heart diseases and heart abnormalities.</string>
-    <string name="gynecologist_desc">A doctor skilled in the treatment of diseases of women\'s the reproductive organs.</string>
+    <string name="gynecologist_desc">A doctor skilled in the treatment of diseases of women\'s reproductive organs.</string>
     <string name="psychiatrist_desc">A medical practitioner specializing in the diagnosis and treatment of mental illness.</string>
     <string name="radiologist_desc">A person who uses X-rays or other high-energy radiation for treatment.</string>
     <string name="neurologist_desc">A specialist in the anatomy, functions, and organic disorders of the nervous system.</string>
     <string name="dermatologist_desc">A medical practitioner qualified to diagnose and treat skin disorders.</string>
     <string name="nephrologist_desc">A medical professionals who treat kidney problems and diseases.</string>
     <string name="endocrinologist_desc">A medical practitioner who treat disorders of the endocrine glands and hormones.</string>
+    <string name="nbpt_doc_1">1. Please choose your Date and Time Carefully according to Doctor\'s Availability.</string>
+    <string name="nbpt_doc_2">2. A Date must be selected for an appointment and time is not mandatory.</string>
+    <string name="nbpt_doc_3">3. If you don\'t choose any time then the default timing will be taken; i.e. 10:00 AM - 05:00 PM.</string>
+    <string name="nbpt_doc_4">4. Time may vary from 15 Min. to 20 Min according to Doctor\'s availability.</string>
+    <string name="nbpt_doc_5">5. Always choose a time between 06:00 AM - 10:00 PM for any appointment.</string>
     <string name="nbpt">Please Long Press any Doctor Category to know more about it.</string>
 </resources>

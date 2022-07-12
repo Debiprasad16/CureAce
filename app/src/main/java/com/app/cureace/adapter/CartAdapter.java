@@ -57,7 +57,7 @@ public class CartAdapter extends RecyclerView.Adapter<CartAdapter.ViewHolder> {
         sharedPref = context.getSharedPreferences(AppUtil.PREFS, 0);
 
         holder.name_tv.setText(ambulanceModelList.get(position).getM_title());
-        holder.price_tv.setText("Price : "+ambulanceModelList.get(position).getM_price()+" Rs");
+        holder.price_tv.setText("Price : ₹"+ambulanceModelList.get(position).getM_price());
         holder.date_tv.setText("Quantity : " +ambulanceModelList.get(position).getM_quantity() + "\nTotal : " +ambulanceModelList.get(position).getM_sub_total());
 
         holder.itemView.setOnClickListener(new View.OnClickListener() {
@@ -77,7 +77,7 @@ public class CartAdapter extends RecyclerView.Adapter<CartAdapter.ViewHolder> {
 
 
         }
-        total_tv.setText("Total : "+total_price + " Rs");
+        total_tv.setText("Total : ₹"+total_price);
 
         holder.remove_btn.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -121,7 +121,7 @@ public class CartAdapter extends RecyclerView.Adapter<CartAdapter.ViewHolder> {
                 .child(AppUtil.MEDICINES_CART_TABLE_KEY).child(sharedPref.getString(AppUtil.USER_ID,"")).child(ambulanceModelList.get(position).getId());
         mDatabaseRef.removeValue();
         holder.itemView.setVisibility(View.GONE);
-        Toast.makeText(context, "product has been deleted!", Toast.LENGTH_SHORT).show();
+        Toast.makeText(context, "Product has been removed.", Toast.LENGTH_SHORT).show();
         ambulanceModelList.remove(position);
         notifyItemRemoved(position);
         notifyItemRangeChanged(position, ambulanceModelList.size());

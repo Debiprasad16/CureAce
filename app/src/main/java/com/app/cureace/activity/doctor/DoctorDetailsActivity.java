@@ -139,7 +139,7 @@ public class DoctorDetailsActivity extends AppCompatActivity implements DatePick
 
                 if (selected_date.isEmpty() && selected_time.isEmpty())
                 {
-                    Toast.makeText(DoctorDetailsActivity.this, "Please choose date and time", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(DoctorDetailsActivity.this, "Please choose Date and Time.", Toast.LENGTH_SHORT).show();
                 }else
                 {
                     makePayment();
@@ -233,7 +233,7 @@ public class DoctorDetailsActivity extends AppCompatActivity implements DatePick
                 {
                     //sendEmail(doctorModel.getEmail(),"Appointment "+ appointment_id + "received","Patient Details : " + patientdetails  );
                     progressBar.setVisibility(View.GONE);
-                    Toast.makeText(DoctorDetailsActivity.this, "Your appointment has been booked successfully! Please check my appointment section.", Toast.LENGTH_LONG).show();
+                    Toast.makeText(DoctorDetailsActivity.this, "Your appointment has been booked successfully. Please check My Appointment Section.", Toast.LENGTH_LONG).show();
                     onBackPressed();
                 }else
                 {

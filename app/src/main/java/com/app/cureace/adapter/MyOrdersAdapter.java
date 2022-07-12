@@ -59,7 +59,7 @@ public class MyOrdersAdapter extends RecyclerView.Adapter<MyOrdersAdapter.ViewHo
 
         holder.name_tv.setText(ambulanceModelList.get(position).getBooking_id());
         holder.price_tv.setText("Price : "+ambulanceModelList.get(position).getM_total_price()+" Rs");
-        holder.date_tv.setText("date : " +ambulanceModelList.get(position).getDate_time() );
+        holder.date_tv.setText("Date : " +ambulanceModelList.get(position).getDate_time() );
 
         holder.itemView.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -111,7 +111,7 @@ public class MyOrdersAdapter extends RecyclerView.Adapter<MyOrdersAdapter.ViewHo
                 .child(AppUtil.MEDICINES_BOOKING_TABLE_KEY).child(sharedPref.getString(AppUtil.USER_ID,"")).child(ambulanceModelList.get(position).getId());
         mDatabaseRef.removeValue();
         holder.itemView.setVisibility(View.GONE);
-        Toast.makeText(context, "order has been deleted!", Toast.LENGTH_SHORT).show();
+        Toast.makeText(context, "Your Order has been Cancelled.", Toast.LENGTH_SHORT).show();
         ambulanceModelList.remove(position);
         notifyItemRemoved(position);
         notifyItemRangeChanged(position, ambulanceModelList.size());

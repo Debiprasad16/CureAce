@@ -56,7 +56,7 @@ public class OrderCartItemsAdapter extends RecyclerView.Adapter<OrderCartItemsAd
         sharedPref = context.getSharedPreferences(AppUtil.PREFS, 0);
 
         holder.name_tv.setText(ambulanceModelList.get(position).getM_title());
-        holder.price_tv.setText("Price : "+ambulanceModelList.get(position).getM_price()+" Rs");
+        holder.price_tv.setText("Price : ₹"+ambulanceModelList.get(position).getM_price());
         holder.date_tv.setText("Quantity : " +ambulanceModelList.get(position).getM_quantity() + "\nTotal : " +ambulanceModelList.get(position).getM_sub_total());
 
       /*  holder.itemView.setOnClickListener(new View.OnClickListener() {

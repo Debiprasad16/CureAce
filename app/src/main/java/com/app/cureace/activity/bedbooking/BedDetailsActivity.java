@@ -94,9 +94,9 @@ public class BedDetailsActivity extends AppCompatActivity implements DatePickerD
             @Override
             public void onClick(View view) {
                 if (start_date.isEmpty())
-                    Toast.makeText(BedDetailsActivity.this, "please select a date", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(BedDetailsActivity.this, "Please select a date", Toast.LENGTH_SHORT).show();
                else if(days_et.getText().toString().isEmpty())
-                    days_et.setError("please enter no. of days like(1,2,3,5,10)");
+                    days_et.setError("Please enter no. of days like(1,2,3,5,10)");
                else
 
                   makePayment();
@@ -166,7 +166,7 @@ public class BedDetailsActivity extends AppCompatActivity implements DatePickerD
                 if (task.isSuccessful())
                 {
                      progressBar.setVisibility(View.GONE);
-                    Toast.makeText(BedDetailsActivity.this, "Your bed has been booked successfully! Please check my Bed Booking section.", Toast.LENGTH_LONG).show();
+                    Toast.makeText(BedDetailsActivity.this, "Your bed has been booked successfully! Please check My Bed Booking Section.", Toast.LENGTH_LONG).show();
                     onBackPressed();
                 }else
                 {

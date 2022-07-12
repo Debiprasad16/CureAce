@@ -147,7 +147,7 @@ signUp_progress.setVisibility(View.GONE);
                 {
                     signUp_progress.setVisibility(View.GONE);
 
-                    Toast.makeText(ProfileActivity.this, "Profile Updated Successfully", Toast.LENGTH_SHORT).show();
+                    Toast.makeText(ProfileActivity.this, "Profile Updated Successfully.", Toast.LENGTH_SHORT).show();
                     SharedPreferences.Editor editor = getSharedPreferences(AppUtil.PREFS, MODE_PRIVATE).edit();
                     editor.putString(AppUtil.USER_NAME, name_et.getText().toString());
                     editor.apply();

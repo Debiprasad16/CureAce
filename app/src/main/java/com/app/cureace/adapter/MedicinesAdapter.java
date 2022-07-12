@@ -49,7 +49,7 @@ public class MedicinesAdapter extends RecyclerView.Adapter<MedicinesAdapter.View
     public void onBindViewHolder(@NonNull MedicinesAdapter.ViewHolder holder, int position) {
 
         holder.name_tv.setText(ambulanceModelList.get(position).getM_title());
-        holder.price_tv.setText("Price : "+ambulanceModelList.get(position).getM_price()+" Rs");
+        holder.price_tv.setText("Price : ₹"+ambulanceModelList.get(position).getM_price());
         holder.date_tv.setText("Expiry Date : " +ambulanceModelList.get(position).getM_exp_date());
 
         holder.itemView.setOnClickListener(new View.OnClickListener() {

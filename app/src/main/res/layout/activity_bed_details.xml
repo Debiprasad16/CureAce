@@ -157,11 +157,10 @@
                 android:layout_width="match_parent"
                 android:layout_height="50dp"
                 android:backgroundTint="@android:color/transparent"
-                android:hint="enter no. of days "
+                android:hint="Enter No. of Days."
                 android:inputType="textMultiLine"
                 android:padding="@dimen/_10dp"
-
-                android:textColor="@color/greencolor"
+                android:textColor="@color/white"
                 android:textColorHint="#BFBFBF" />
 
         </RelativeLayout>

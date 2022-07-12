@@ -54,7 +54,7 @@ public class AmbulanceBookingAdapter extends RecyclerView.Adapter<AmbulanceBooki
         holder.name_tv.setText("Hospital Name : "+userList.get(position).getHospital_name());
         holder.expertise_tv.setText("Address : "+userList.get(position).getHospital_address());
         holder.h_name_tv.setText("Ambulance Number  : "+userList.get(position).getAmbulance_number());
-        holder.date_tv.setText("date  : "+userList.get(position).getDate_and_time());
+        holder.date_tv.setText("Date  : "+userList.get(position).getDate_and_time());
 
         holder.itemView.setOnClickListener(new View.OnClickListener() {
             @Override
@@ -107,7 +107,7 @@ public class AmbulanceBookingAdapter extends RecyclerView.Adapter<AmbulanceBooki
                 .child(userList.get(position).getUser_id()).child(userList.get(position).getId());
         mDatabaseRef.removeValue();
         viewHolder.itemView.setVisibility(View.GONE);
-        Toast.makeText(context, "Ambulance booking has been deleted!", Toast.LENGTH_SHORT).show();
+        Toast.makeText(context, "Ambulance booked has been cancelled.", Toast.LENGTH_SHORT).show();
         userList.remove(position);
         notifyItemRemoved(position);
         notifyItemRangeChanged(position, userList.size());

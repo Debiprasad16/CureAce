@@ -171,7 +171,7 @@ public class CartActivity extends AppCompatActivity implements PaymentResultList
 
                     databaseReference.child(sharedPref.getString(AppUtil.USER_ID,"")).removeValue();
                     progressBar.setVisibility(View.GONE);
-                    Toast.makeText(CartActivity.this, "Order Placed! Please check my orders  section.", Toast.LENGTH_LONG).show();
+                    Toast.makeText(CartActivity.this, "Order Placed! Please check My Orders Section.", Toast.LENGTH_LONG).show();
                     onBackPressed();
                 }else
                 {

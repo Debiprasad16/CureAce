@@ -108,7 +108,7 @@ public class MyAppointmentsAdapter extends RecyclerView.Adapter<MyAppointmentsAd
                 .child(userList.get(position).getUser_id()).child(userList.get(position).getId());
         mDatabaseRef.removeValue();
         viewHolder.itemView.setVisibility(View.GONE);
-        Toast.makeText(context, "appointment has been deleted!", Toast.LENGTH_SHORT).show();
+        Toast.makeText(context, "Your Appointment has been Cancelled :(", Toast.LENGTH_SHORT).show();
         userList.remove(position);
         notifyItemRemoved(position);
         notifyItemRangeChanged(position, userList.size());
